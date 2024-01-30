@@ -1,0 +1,298 @@
+{
+  "settings": {
+    "currentPage": "page1.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#c37a7a",
+        "secondaryColor": "#379683",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Epilogue",
+        "display1Size": 4.6,
+        "display2Font": "Epilogue",
+        "display2Size": 3,
+        "display5Font": "Epilogue",
+        "display5Size": "1.8",
+        "display7Font": "Epilogue",
+        "display7Size": "1.1",
+        "display4Font": "Epilogue",
+        "display4Size": "1",
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Agency",
+      "nameSelectPreset": "agency",
+      "presetSourceTheme": "mobirise5",
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "Site-09-13_2219",
+    "versionFirst": "5.6.13",
+    "siteFonts": [
+      {
+        "css": "'Epilogue', sans-serif",
+        "name": "Epilogue",
+        "url": "https://fonts.googleapis.com/css?family=Epilogue:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 1,
+    "versionPublish": "5.6.13",
+    "imageResize": false,
+    "screenshot": "screenshot.png",
+    "favicon": false,
+    "mbrsiteDomain": "ndozf6ga1u",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": []
+    },
+    "page1.html": {
+      "settings": {
+        "title": "Mapify",
+        "order": "1"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".image-wrap img": {
+              "width": "100%",
+              "@media (min-width: 992px)": {
+                "display": "block",
+                "margin": "auto",
+                "width": "(@imageWidth * 10%)"
+              }
+            }
+          },
+          "_name": "header9",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header9\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"30\" step=\"1\" value=\"21\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"30\" step=\"1\" value=\"16\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"10\" step=\"1\" value=\"10\" condition=\"showImage\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-3.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#d2fdff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#d2fdff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"text-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-9\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Mapify-Your Map Router</b></h1>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Mapify is a website developed by Anmol Bharti,Ayush Jaiswal,Arjun Kushwah,Austin Peter.Its main purpose is to&nbsp;<br>make the process of locationing much more easier in every ways possible,its not only having just one feature&nbsp;<br>it contains mainy features Such as-Map compare,Route Predictor(Long and Short Routes),map markups and many other Exciting Features Ahead.<br>Made under the Guidance of-Dr.Dipti Chauhan ma'am</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">to make your life easy-Just Mapify!!!!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sFHoAfPmXB",
+          "_anchor": "header9-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".timeline-element": {
+              "position": "relative"
+            },
+            ".timelines-container": {
+              "display": "flex",
+              "flex-wrap": "wrap",
+              "& when (@reverseTimeline)": {
+                "flex-direction": "column-reverse"
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "object-fit": "cover"
+            },
+            ".mbr-section-title, .mbr-section-subtitle, .timeline-date": {
+              "text-align": "center"
+            },
+            ".iconBackground": {
+              "position": "absolute",
+              "width": "20px",
+              "height": "20px",
+              "border-radius": "50%",
+              "border": "2px solid @lineColor",
+              "margin-left": "-9px",
+              "padding": "0",
+              "@media (max-width: 767px)": {
+                "left": "15px",
+                "top": "30px"
+              },
+              "@media (min-width: 768px)": {
+                "top": "70px",
+                "left": "50%"
+              }
+            },
+            ".row": {
+              "&:after": {
+                "content": "\"\"",
+                "position": "absolute",
+                "background-color": "@lineColor",
+                "width": "2px",
+                "@media (max-width: 767px)": {
+                  "height": "calc(100% ~\"+\" 30px)",
+                  "top": "50px",
+                  "left": "15px"
+                },
+                "@media (min-width: 768px)": {
+                  "& when (@showDates)": {
+                    "height": "calc(100% ~\"-\" 20px)"
+                  },
+                  "& when not (@showDates)": {
+                    "height": "calc(100% ~\"+\" 28px)"
+                  },
+                  "top": "90px",
+                  "left": "50%"
+                }
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper, .image-wrapper": {
+                "padding": "0rem",
+                "padding-left": "2rem"
+              },
+              ".mbr-timeline-date": {
+                "text-align": "left !important"
+              },
+              ".mbr-timeline-title": {
+                "text-align": "left",
+                "margin-top": "1rem"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper": {
+                "padding": "1rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".timeline-date-wrapper, .timeline-text-wrapper, .image-wrapper": {
+                "padding": "2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#40b0bf"
+            },
+            ".mbr-timeline-date": {
+              "color": "#22a5e5"
+            },
+            ".mbr-timeline-title": {
+              "color": "#4479d9"
+            },
+            ".mbr-text": {
+              "color": "#000000"
+            }
+          },
+          "_name": "timeline3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"timeline3\" group=\"Timelines\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Reverse Timeline\" name=\"reverseTimeline\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Dates\" name=\"showDates\" checked>\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n        <select title=\"Count\" name=\"timelinesAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n            <option value=\"11\">11</option>\n            <option value=\"12\">12</option>\n        </select>\n        <input type=\"color\" name=\"lineColor\" title=\"Color\" value=\"#b4dfe5\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b><i>Features Provided By Mapify!!</i></b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Enter subtitle here\n            </h4>\n        </div>\n        <div class=\"timelines-container mt-4\">\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">Some Leading Features Provided By Mapify!!!</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"@PROJECT_PATH@/assets/images/stephen-monroe-yg8cz-i5u30-unsplash.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\"><b><i>Route Maker And Organizer</i></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\">The Route Maker by Mapify is Quite Useful tool as it tells us<br>that how we can reach our destination by us precise Directions and also it can tell us the directions short distanced and long distanced both.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>1\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">Next Leading Feature</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"@PROJECT_PATH@/assets/images/julentto-photography-ciuakyijadc-unsplash.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\"><b><i>Map Comparator and Map Draw</i></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\">Map Comparator and Map Draw feature allows us to compare two maps efficiently in different views and the Map draw feature<br>allows us to draw lines and contours in the map efficiently which not only optimizes our experience with maps but also Saves a lot of time.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>2\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">Next leading feature!</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thumbbig-75879.jpeg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\"><b><i>Diffrent Mapview and Geolocation</i></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\">Different Map view gives you an idea about different aspects of the area and the feature of Geolocation helps us to markup the area in which your are right now and it helps us to calculate distances of your current location etc.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>3\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Use Mobirise website building software to create multiple sites for commercial and non-profit projects.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>4\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>5\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>6\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>7\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Use Mobirise website building software to create multiple sites for commercial and non-profit projects.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>8\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. You don't have to code to create your own site. Select one of available themes in the Mobirise sitebuilder.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>9\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. All sites you create with the Mobirise web builder are mobile-friendly natively. No special actions required.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>10\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Select the theme that suits you. Each theme in the Mobirise site builder contains a set of unique blocks.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row timeline-element first-separline mb-5\" mbr-class=\"{'reverseTimeline': reverseTimeline}\" mbr-if=\"timelinesAmount>11\">\n                <div class=\"timeline-date col-12\">\n                    <div class=\"timeline-date-wrapper\">\n                        <p class=\"mbr-timeline-date\" data-toolbar=\"-mbrAlign\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".mbr-timeline-date\">\n                            23 April 2025</p>\n                    </div>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"image-wrapper\" mbr-if=\"showImages\">\n                        <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise Website Builder\" title>\n                    </div>\n                </div>\n                <div class=\"col-12 col-md-6\">\n                    <div class=\"timeline-text-wrapper\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-timeline-title\">\n                            <b>Form Builder</b>\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style mt-3 mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                            This is a timeline block. Click on the blue gear icon to set the number of items in this timeline. Use Mobirise website building software to create multiple sites for commercial and non-profit projects.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sFHr5fwP9J",
+          "_anchor": "timeline3-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "border-radius": "4px",
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#353535"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ff9966"
+            }
+          },
+          "_name": "content15",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content15\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#d2fdff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-left\">\n                        <h4 class=\"card-title mbr-fonts-style mbr-white mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Features</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet porttitor ante. Pellentesque eu orci molestie est tincidunt interdum. Duis pellentesque volutpat leo vel rhoncus. Sed a metus sit amet sapien vulputate mattis. Nulla vel elementum lectus. Nulla euismod euismod maximus. Praesent porttitor mauris arcu, vitae porttitor ipsum ultricies in. Etiam lacinia faucibus arcu, et volutpat metus pretium eu. Nullam nisl mauris, porta convallis dictum quis, tincidunt id orci. Duis ut ultrices nisl. Phasellus rhoncus suscipit leo nec sollicitudin. Curabitur feugiat blandit mauris, at efficitur massa lacinia vel. Integer turpis lacus, dictum nec commodo vitae, iaculis ac turpis.</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start\n                                Now</a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sFHuaHz0Qy",
+          "_anchor": "content15-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "overflow": "hidden",
+            ".row .mbr-text": {
+              "color": "#232323"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".row .mbr-text\" data-app-placeholder=\"Type Text\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sFHu2wLoQp",
+          "_anchor": "footer7-9",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
